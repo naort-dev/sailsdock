@@ -1,0 +1,8 @@
+.transition-3 {
+  transition: .3s;
+}
+.rotate-90 {
+  &:hover {
+    transform: rotate(90deg);
+  }
+}

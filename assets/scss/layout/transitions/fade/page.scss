@@ -1,0 +1,53 @@
+/* @keyframes pageFadeInUp {
+  from {
+    transform: translate(25px, 25px);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+@keyframes dagonal-down-out {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(25px, 25px);
+    opacity: 0l
+  }
+}
+.page-leave-to {
+  opacity: 0;
+  transition: opacity .3s;
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  animation-name: dagonal-down-out;
+  transition: opacity .6s;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.page-enter-to {
+  opacity: 0;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  animation-name: pageFadeInUp;
+}
+*/
+.page-enter-active,
+.page-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0
+}

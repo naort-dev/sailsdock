@@ -1,0 +1,17 @@
+{
+  "useTaobaoRegistry": true,
+  "presets": {
+    "my-preset.json": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "base",
+          "lintOn": [
+            "save"
+          ]
+        }
+      }
+    }
+  }
+}

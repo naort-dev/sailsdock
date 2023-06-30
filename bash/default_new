@@ -1,0 +1,36 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+	index index.html;
+	#server_name next3.sailsdock.com;
+	#root /usr/share/nginx/html;
+        root /var/www/html;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+        	proxy_pass http://localhost:3000;
+        	proxy_http_version 1.1;
+        	proxy_set_header Upgrade $http_upgrade;
+        	proxy_set_header Connection 'upgrade';
+        	proxy_set_header Host $host;
+        	proxy_cache_bypass $http_upgrade;
+    	}
+}
+
+server {
+	server_name api-dhl.techfairy.services;
+        index index.html index.htm index.nginx-debian.html;
+        location / {
+        	proxy_pass http://localhost:3001;
+        	proxy_http_version 1.1;
+        	proxy_set_header Upgrade $http_upgrade;
+        	proxy_set_header Connection 'upgrade';
+        	proxy_set_header Host $host;
+        	proxy_cache_bypass $http_upgrade;
+    	}
+}
+

@@ -1,0 +1,40 @@
+@keyframes from-bottom-up {
+  from {
+    transform: scale(1) translate(0%, 100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes reverse-from-bottom-up {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: scale(1) translate(0%, 100%);
+  }
+}
+
+.from-bottom-up-leave-to {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: reverse-from-bottom-up;
+  transition: opacity .3s;
+}
+
+.from-bottom-up-enter {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.from-bottom-up-enter-to {
+  opacity: 0;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: from-bottom-up;
+  transition: opacity .3s;
+}

@@ -1,0 +1,52 @@
+@import "../../../layout/colors/var";
+
+.sidebar {
+  user-select: none;
+  &.--panel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    width: 280px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: $dark;
+    padding: 50px 30px 30px;
+    box-sizing: border-box;
+    z-index: 600;
+    transition: none 0s ease 0s;
+    transform: none;
+    border-right: 0.1rem solid #f0eeeb;
+    @media(max-width: 1024px) {
+      left: -100%;
+    }
+  }
+  &.--nav {
+    margin-top: 45px;
+    width: 100%;
+  }
+  &.--link {
+    &.--parent {
+      color: $white;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      background-size: contain;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &.--child {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+    }
+    &.--active {
+      color: white;
+    }
+  }
+}

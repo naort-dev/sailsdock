@@ -1,0 +1,16 @@
+@import "breakpoints";
+
+.ui-user {
+  &.--display {
+    @media(min-width: $desktop-min) {
+      margin-left: 280px;
+      width: calc(100% - 280px);
+    }
+  }
+  &.--border-bottom {
+    border-bottom: 1px solid rgb(240, 238, 235);
+  }
+}
+.pointer {
+  cursor: pointer;
+}

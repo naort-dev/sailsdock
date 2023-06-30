@@ -1,0 +1,40 @@
+@keyframes in-up-out {
+  from {
+    transform: translate(100%, 100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes reverse-in-up-out {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+
+.in-up-out-leave-to {
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  animation-name: reverse-in-up-out;
+  transition: opacity .6s;
+}
+
+.in-up-out-enter {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.in-up-out-enter-to {
+  opacity: 0;
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  animation-name: in-up-out;
+  transition: opacity .6s;
+}

@@ -1,0 +1,31 @@
+.bg-theme {
+  background: $theme;
+}
+body {
+  font-family: 'century_gothicregular', Arial, sans-serif !important;
+}
+.hover--theme {
+  &.--bg {
+    transition: 0.3s;
+    &:hover {
+      background-color: $theme;
+      transition: 0.3s;
+    }
+  }
+  &.--cl {
+    transition: 0.3s;
+    &:hover {
+      color: $theme;
+      transition: 0.3s;
+    }
+  }
+}
+.select-none {
+  user-select: none;
+}
+.ui-gray {
+  color: $gray;
+}
+.material-icons {
+  user-select: none;
+}

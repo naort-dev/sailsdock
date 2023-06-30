@@ -1,0 +1,21 @@
+.pop-in-animation {
+  animation: .6s ease-in-out both popInKeyFrameAnimation;
+}
+
+@keyframes popInKeyFrameAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(-100%, 0);
+  }
+  
+  50% {
+    opacity: 1;
+    transform: scale(1) translate(10%, 0);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+    
+  }
+}

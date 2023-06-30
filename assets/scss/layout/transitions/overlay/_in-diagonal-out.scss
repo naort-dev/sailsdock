@@ -1,0 +1,40 @@
+@keyframes in-diagonal-out {
+  from {
+    transform: translate(100%, 100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes reverse-in-diagonal-out {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+
+.in-diagonal-out-leave-to {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: reverse-in-diagonal-out;
+  transition: opacity .3s;
+}
+
+.in-diagonal-out-enter {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.in-diagonal-out-enter-to {
+  opacity: 0;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: in-diagonal-out;
+  transition: opacity .3s;
+}

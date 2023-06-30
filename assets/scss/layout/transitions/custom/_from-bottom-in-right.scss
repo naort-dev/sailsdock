@@ -1,0 +1,40 @@
+@keyframes from-bottom-in-right {
+  from {
+    transform: translate(-100%, 100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes reverse-from-bottom-in-right {
+  from {
+    transform: translate(0%, 0%);
+  }
+
+  to {
+    transform: translate(-100%, 100%);
+  }
+}
+
+.from-bottom-in-right-leave-to {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: reverse-from-bottom-in-right;
+  transition: opacity .3s;
+}
+
+.from-bottom-in-right-enter {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+}
+
+.from-bottom-in-right-enter-to {
+  opacity: 0;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-name: from-bottom-in-right;
+  transition: opacity .3s;
+}

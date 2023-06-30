@@ -1,0 +1,38 @@
+$xxs: 1rem;
+$xs: 1.4rem;
+$sm: 1.625rem;
+$md: 1.8rem;
+$lg: 2rem;
+$xl: 2.2rem;
+$xxl: 2.5rem;
+$xl3: 2.8rem;
+$xl4: 3.25rem;
+.ui-size {
+  &.--xxs {
+    font-size: $xxs;
+  }
+  &.--xs {
+    font-size: $xs;
+  }
+  &.--sm {
+    font-size: $sm;
+  }
+  &.--md {
+    font-size: $md;
+  }
+  &.--lg {
+    font-size: $lg;
+  }
+  &.--xl {
+    font-size: $xl;
+  }
+  &.--xxl {
+    font-size: $xxl;
+  }
+  &.--xl3 {
+    font-size: $xl3;
+  }
+  &.--xl4 {
+    font-size: $xl4;
+  }  
+}

@@ -1,0 +1,13 @@
+.text-transform {
+  &.--capitalize {
+    text-transform: capitalize;
+  }
+}
+.font-bold-gray {
+  color: #6b747d;
+  font-weight: 500;
+}
+.font-bold-dark-gray {
+  color: #b9b9b9;
+  font-weight: 600;
+}

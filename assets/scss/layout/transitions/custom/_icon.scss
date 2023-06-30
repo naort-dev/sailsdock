@@ -1,0 +1,26 @@
+.icon-slide-in-right {
+  animation: .5s ease-in-out both icon-slide-in-right;
+}
+
+// Loop from 1-12.
+@for $i from 1 through 12 {
+  .icon-slide-in-right {
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (.2s);
+    }
+  }
+}
+
+@keyframes icon-slide-in-right {
+  from {
+    transform: translate3d(15px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scale(1.2);
+    opacity: 1
+  }
+}

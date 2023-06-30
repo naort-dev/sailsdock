@@ -1,0 +1,35 @@
+.easy-process {
+    .card-header {
+        text-align: left;
+        font-size: 32px;
+        background: #ddd;
+    }
+    .container > .card {
+        margin-bottom: 2rem;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .card.text-left {
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+        transition: 0.3s;
+        padding: 0;
+        &.active, &:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+        &.active {
+            border: 1px solid #444;
+        }
+        &.carousel-card {
+            &:hover {
+                border: none;
+            }
+            color: #222;
+        }
+        h3 {
+            cursor: pointer;
+        }
+    }
+}   

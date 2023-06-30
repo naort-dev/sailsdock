@@ -1,0 +1,12 @@
+.ui-sidebar {
+  &.--wrapper {
+    display: block;
+    position: fixed;
+    background: #fffffff7;
+    height: 100%;
+    width: 100%;
+    z-index: 700;
+    min-height: 100vh;
+    backdrop-filter: blur(3px);
+  }
+}

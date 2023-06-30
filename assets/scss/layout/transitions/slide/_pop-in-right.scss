@@ -1,0 +1,32 @@
+.pop-in-right {
+  animation: .5s ease-in-out both pop-in;
+}
+
+// Loop from 1-12.
+@for $i from 1 through 12 {
+  .pop-in-right {
+    &:nth-child(#{$i}) {
+      
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (.2s);
+    }
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(-100%, 0);
+  }
+  
+  50% {
+    opacity: 1;
+    transform: scale(1) translate(10%, 0);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+    
+  }
+}

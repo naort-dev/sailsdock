@@ -1,0 +1,12 @@
+.slide-y-up-enter-active, .slide-y-up-enter {
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transform: translateY(-1rem);
+}
+
+.slide-y-up-enter,
+.slide-y-up-leave-to,
+.slide-y-up-leave-active {
+  opacity: 0;
+}

@@ -1,0 +1,25 @@
+/* / --------------------------------------------------------------------------------------------- / */
+/* / -------------------------------------- Blocks ----------------------------------------------- / */
+/* / --------------------------------------------------------------------------------------------- / */
+@import "blocks/global/user/sidebar";
+@import "blocks/global/buttons/buttons";
+
+/* / --------------------------------------------------------------------------------------------- / */
+/* / -------------------------------------- Layout ----------------------------------------------- / */
+/* / --------------------------------------------------------------------------------------------- / */
+@import "layout/transitions/style";
+@import "layout/colors/var";
+@import "layout/colors/theme";
+@import "layout/list/list";
+@import "layout/helpers/ui-user";
+@import "layout/helpers/sizes";
+@import "layout/form/form";
+@import "layout/form/input";
+@import "layout/display/display";
+@import "layout/height/height";
+@import "layout/display/text";
+@import "layout/tabs/tabs";
+@import "layout/process/process";
+@import "layout/notifications/notifications";
+@import "assets/scss/layout/card/card";
+@import "assets/scss/layout/sidebar/sidebar";
